@@ -18,31 +18,36 @@
             <div class="panel-body">
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
-                  <h3 class="text-center">Enter your credit card information</h3>
+                  <h3 class="text-center form-title">Enter your credit card information</h3>
                   <form name="payment-form">
                     <div class="form-group">
-                      <input class="form-control text-center" name="name" type="text" placeholder="Name" id="name-field">
+                      <input class="form-control text-center" name="name" type="text" placeholder="Name" id="name-field" aria-describedby="name-field-desc">
                       <p class="error-message" id="name-field-error"></p>
+                      <div id="name-field-desc" class="offscreen">Name. Enter your full name as it appears on your credit card.</div>
                     </div>
                     <div class="form-group">
-                      <input class="form-control text-center" name="card-number" type="number" placeholder="Card Number" id="card-number-field">
+                      <input class="form-control text-center" name="card-number" type="number" placeholder="Card Number" id="card-number-field" aria-describedby="credit-card-field-desc">
                       <p class="error-message" id="card-number-field-error"></p>
+                      <div id="credit-card-field-desc" class="offscreen">Credit Card. Enter your credit card number.</div>
                     </div>
                     <div class="form-group">
-                      <input class="form-control text-center" name="cvv2" type="number" placeholder="CVV2" id="cvv2-field">
+                      <input class="form-control text-center" name="cvv2" type="number" placeholder="CVV2" id="cvv2-field" aria-describedby="cvv2-field-desc">
                       <p class="error-message" id="cvv2-field-error"></p>
+                      <div id="cvv2-field-desc" class="offscreen">CVV2. Enter your credit card's security code. If you have an American Express card, this code is 4 digits long, found on the front of your card. If you have a Visa card, this code is 3 digits long, found on the back of your card.</div>
                     </div>
                     <div class="form-group row">
                       <div class="col-sm-6">
-                        <input class="form-control text-center" name="exp-month" type="number" placeholder="Exp. Month" id="exp-month-field">
+                        <input class="form-control text-center" name="exp-month" type="number" placeholder="Exp. Month" id="exp-month-field" aria-describedby="exp-month-field-desc">
                         <p class="error-message" id="exp-month-field-error"></p>
+                        <div id="exp-month-field-desc" class="offscreen">Expiration Month. Enter your credit card's expiration month in the format of a number. For example, June would be 06, and December would be 12.</div>
                       </div>
                       <div class="col-sm-6">
-                        <input class="form-control text-center" name="exp-year" type="number" placeholder="Exp. Year" id="exp-year-field">
+                        <input class="form-control text-center" name="exp-year" type="number" placeholder="Exp. Year" id="exp-year-field" aria-describedby="exp-year-field-desc">
                         <p class="error-message" id="exp-year-field-error"></p>
+                        <div id="exp-year-field-desc" class="offscreen">Expiration Year. Enter your credit card's expiration year. You can enter either a 2- or 4-digit year (i.e. 19 or 2019).</div>
                       </div>
                     </div>
-                    <img class="img-responsive" id="credit-cards-image" src="http://res.cloudinary.com/dxedeitqy/image/upload/v1499805170/CreditCards.gif">
+                    <img class="img-responsive credit-cards-image" src="http://res.cloudinary.com/dxedeitqy/image/upload/v1499805170/CreditCards.gif">
                     <button type="submit" id="submit-button" class="btn btn-primary btn-lg btn-block text-center">Submit</button>
                   </form>
                 </div>
@@ -54,7 +59,6 @@
     </div>
     
     <script src="scripts.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
