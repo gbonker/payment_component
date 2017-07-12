@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
   </head>
   <body>
     <div class="container">
@@ -20,26 +19,31 @@
               <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                   <h3 class="text-center">Enter your credit card information</h3>
-                  <form>
+                  <form name="payment-form">
                     <div class="form-group">
-                      <input class="form-control text-center" type="text" placeholder="Name" id="name-field">
+                      <input class="form-control text-center" name="name" type="text" placeholder="Name" id="name-field">
+                      <p class="error-message" id="name-field-error"></p>
                     </div>
                     <div class="form-group">
-                      <input class="form-control text-center" type="number" placeholder="Card Number" id="card-number-field">
+                      <input class="form-control text-center" name="card-number" type="number" placeholder="Card Number" id="card-number-field">
+                      <p class="error-message" id="card-number-field-error"></p>
                     </div>
                     <div class="form-group">
-                      <input class="form-control text-center" type="number" placeholder="CVV2" id="cvv2-field">
+                      <input class="form-control text-center" name="cvv2" type="number" placeholder="CVV2" id="cvv2-field">
+                      <p class="error-message" id="cvv2-field-error"></p>
                     </div>
                     <div class="form-group row">
                       <div class="col-sm-6">
-                        <input class="form-control text-center" type="number" placeholder="Exp. Month" id="exp-month-field">
+                        <input class="form-control text-center" name="exp-month" type="number" placeholder="Exp. Month" id="exp-month-field">
+                        <p class="error-message" id="exp-month-field-error"></p>
                       </div>
                       <div class="col-sm-6">
-                        <input class="form-control text-center" type="number" placeholder="Exp. Year" id="exp-year-field">
+                        <input class="form-control text-center" name="exp-year" type="number" placeholder="Exp. Year" id="exp-year-field">
+                        <p class="error-message" id="exp-year-field-error"></p>
                       </div>
                     </div>
                     <img class="img-responsive" id="credit-cards-image" src="http://res.cloudinary.com/dxedeitqy/image/upload/v1499805170/CreditCards.gif">
-                    <button type="submit" class="btn btn-primary btn-lg btn-block text-center">Submit</button>
+                    <button type="submit" id="submit-button" class="btn btn-primary btn-lg btn-block text-center">Submit</button>
                   </form>
                 </div>
               </div>
@@ -49,6 +53,7 @@
       </div>
     </div>
     
+    <script src="scripts.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
