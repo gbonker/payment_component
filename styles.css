@@ -1,8 +1,18 @@
-#credit-cards-image {
+.credit-cards-image {
 	margin-top: 30px;
   margin-bottom: 30px;
 }
 
 .error-message {
   color: red;
+}
+
+.form-title {
+  margin-bottom: 30px;
+}
+
+.offscreen {
+  position: absolute;
+  left: -200em;
+  top: -20em;
 }
